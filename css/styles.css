@@ -1,0 +1,156 @@
+ /*For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed black;
+}
+
+.column {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+body {
+  background-color: lightgrey;
+}
+
+.column {
+  background-color: white;
+  box-shadow: 2px 2px grey;
+}
+
+.float-img {
+  margin-top: 10%;
+  margin-left: 10%;
+  max-height: 80%;
+  max-width:  30%;
+  float:left;
+}
+
+.a {
+  background-image: url("../img/a-w800.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.f {
+  background-image: url("../img/f-w800.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.a-text {
+  clear: both;
+  margin-top: 13em;
+  margin-left: 1em;
+  color: white;
+
+}
+
+.a-sub {
+  clear: both;
+  color: white;
+  margin-left: 1em;
+}
+
+
+.image {
+  width: 33.3333%;
+  float: left;
+}
+
+.body-col {
+  margin:auto;
+  margin-top: 3%;
+  width: 90%;
+}
+
+.small {
+  height: 100px;
+}
+.large {
+  height: 300px;
+}
+
+@media screen and (min-width: 600px) {
+  .image {
+    display: none;
+  }
+  .body-col {
+    margin-left: 5%;
+    float:left;
+  }
+
+  .a-text {
+    clear: both;
+    margin-top: 16em;
+    color: white;
+  }
+
+  .small {
+    width: 42.5%;
+    min-height:300px;
+  }
+  .large {
+    width: 90%;
+    min-height:350px;
+  }
+  .first-section:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+  .second-section:after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  .b-img {
+    background-image: url("../img/b-w800.jpg");
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  .c-img {
+    background-image: url("../img/c-w800.jpg");
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  .d-img {
+    background-image: url("../img/d-w800.jpg");
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  .e-img {
+    background-image: url("../img/e-w800.jpg");
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+  }
+  .s-text {
+    margin-top:15em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+@media screen and (min-width: 1000px) {
+  .body-col {
+    margin-left: 2%;
+    float:left;
+  }
+  .small {
+    width: 22.5%;
+    min-height:350px;
+  }
+  .large {
+    width: 47%;
+    min-height:350px;
+  }
+  .s-text {
+    margin-top:18em;
+  }
+}
